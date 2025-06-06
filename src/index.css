@@ -51,6 +51,14 @@ footer{
   background: linear-gradient(rgba(58, 54, 54, 0.288),rgba(0, 0, 0, 0.356));
 }
 
+.bg-oscuro,.herofotoi{
+  box-shadow: rgb(126, 122, 122) 0px 0px 5px;
+}
+.bg-oscuro{
+  background: rgb(17, 17, 17);
+}
+
+
 
 .herofotoi{
   background: linear-gradient(rgba(0, 0, 0, 0.250),rgba(88, 83, 83, 0.200),rgba(0, 0, 0, 0.350)),url("/src/assets/img/hero.png") no-repeat center ;

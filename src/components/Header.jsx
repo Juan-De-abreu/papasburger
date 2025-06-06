@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-<nav className="navbar navbar-expand-lg fs-2 BorderTextRed fixed-top">
+<nav className="navbar navbar-expand-lg fs-2 BorderTextRed fixed-top vw-100">
   <div className="container-fluid justify-between">
     <Link to={"/Inicio"} className="navbar-brand fs-1 papasburger" href="/src/pages/Inicio.jsx">Papas Burgeres</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,10 @@ fill={"currentColor"} viewBox="0 0 24 24">
 
       </ul>
 
-        <a className="navbar-brand  fs-3 btn btn-danger btn-sm py-0 px-2" href="https://www.instagram.com/papasburger_2009?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Contactanos</a>
+        <a className="navbar-brand  fs-3 btn btn-danger btn-sm py-0 px-2" href="https://www.instagram.com/papasburger_2009?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+        Contactanos
+        <img className="iconosContactanos mx-2" src="/src/assets/instagram.svg" style={{width:22, height:22}} alt="instagram" />
+        </a>
     </div>
   </div>
 </nav>
