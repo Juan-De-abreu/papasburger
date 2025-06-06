@@ -1,0 +1,100 @@
+{
+  "items": {
+    "comida_rapida": [
+      {
+        "id": 1,
+        "nombre": "Hamburguesa Clásica",
+        "precio": 5.99,
+        "ingredientes": ["Pan de hamburguesa", "Carne de res", "Lechuga", "Tomate", "Queso", "Salsa especial"]
+      },
+      {
+        "id": 2,
+        "nombre": "Pizza Pepperoni",
+        "precio": 8.50,
+        "ingredientes": ["Masa de pizza", "Salsa de tomate", "Mozzarella", "Pepperoni", "Orégano"]
+      },
+      {
+        "id": 3,
+        "nombre": "Hot Dog Americano",
+        "precio": 4.99,
+        "ingredientes": ["Pan de hot dog", "Salchicha", "Mostaza", "Ketchup", "Cebolla crujiente"]
+      },
+      {
+        "id": 4,
+        "nombre": "Tacos de Pollo",
+        "precio": 6.75,
+        "ingredientes": ["Tortilla de maíz", "Pollo desmenuzado", "Cilantro", "Cebolla", "Salsa verde"]
+      },
+      {
+        "id": 5,
+        "nombre": "Papas Fritas",
+        "precio": 2.99,
+        "ingredientes": ["Papas", "Sal", "Aceite vegetal"]
+      }
+    ],
+    "desayunos": [
+      {
+        "id": 6,
+        "nombre": "Arepa Reina Pepiada",
+        "precio": 3.99,
+        "ingredientes": ["Harina de maíz", "Aguacate", "Pollo desmenuzado", "Mayonesa"]
+      },
+      {
+        "id": 7,
+        "nombre": "Panquecas con Miel",
+        "precio": 4.50,
+        "ingredientes": ["Harina", "Huevos", "Leche", "Miel", "Mantequilla"]
+      },
+      {
+        "id": 8,
+        "nombre": "Cachapa con Queso",
+        "precio": 5.75,
+        "ingredientes": ["Maíz dulce", "Leche", "Queso blanco"]
+      },
+      {
+        "id": 9,
+        "nombre": "Café con Leche y Pan",
+        "precio": 2.99,
+        "ingredientes": ["Café", "Leche", "Pan de trigo", "Mantequilla"]
+      },
+      {
+        "id": 10,
+        "nombre": "Huevos Pericos",
+        "precio": 3.50,
+        "ingredientes": ["Huevos", "Tomate", "Cebolla", "Sal"]
+      }
+    ],
+    "almuerzos": [
+      {
+        "id": 11,
+        "nombre": "Pabellón Criollo",
+        "precio": 7.99,
+        "ingredientes": ["Carne mechada", "Arroz", "Caraotas negras", "Plátano maduro"]
+      },
+      {
+        "id": 12,
+        "nombre": "Pollo Asado con Ensalada",
+        "precio": 8.50,
+        "ingredientes": ["Pollo", "Lechuga", "Tomate", "Zanahoria", "Aderezo"]
+      },
+      {
+        "id": 13,
+        "nombre": "Sancocho de Res",
+        "precio": 9.99,
+        "ingredientes": ["Carne de res", "Yuca", "Papa", "Cilantro", "Zanahoria"]
+      },
+      {
+        "id": 14,
+        "nombre": "Pasticho de Carne",
+        "precio": 7.50,
+        "ingredientes": ["Láminas de pasta", "Carne molida", "Salsa bechamel", "Queso parmesano"]
+      },
+      {
+        "id": 15,
+        "nombre": "Arroz con Mariscos",
+        "precio": 10.99,
+        "ingredientes": ["Arroz", "Camarones", "Calamares", "Pimentón", "Cebolla"]
+      }
+    ]
+  }
+}
