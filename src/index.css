@@ -47,6 +47,13 @@ footer{
   background: rgb(29, 29, 29);
 }
 
+
+
+.contenedorplato{
+    max-width: 100%;
+  overflow: hidden;
+  background: black;
+}
 .navbar{
   background: linear-gradient(rgba(58, 54, 54, 0.288),rgba(0, 0, 0, 0.356));
 }

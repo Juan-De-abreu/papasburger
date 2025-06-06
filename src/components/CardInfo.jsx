@@ -45,37 +45,29 @@ const CardInfo = ({items}) => {
 
 
   return (
-    <div className='row m-0 p-0'>
         
-        <div className="col-12">
-            <div className="row">
-                <div className="col-8">
-
-
-                    <h1 className='subtitulo'>{items.nombre}</h1>
+        <div>
+            <div className="row m-0">
+                <h1 className='subtitulo py-3 pb-5'>{items.nombre}</h1>
+                <div className="col-xl-8">
                     <ul className="fs-3 row">
                     {datos
                     .filter((productos) => productos.id === 1)
                     .map((Productos) => (
                         Productos.ingredientes.map((ingrediente)=>(
-
-
-                            <li className="col-6">{ingrediente}</li>
+                            <li className="col-md-4">{ingrediente}</li>
                             
-
-
                         ))
                     ))}
                     </ul>
                 </div>
-                <div className="col-4">
+                <div className="col-xl-4">
                                     <img
             src={direccion}
             alt={items.nombre}
             className="img-fluid tamaborimg "/>
                 </div>
             </div>
-        </div>
 
     </div>
 

@@ -45,7 +45,7 @@ const Inicio = () => {
 
   return (
     <div>
-      <div className="herofotoi text-white">
+      <section className="herofotoi text-white">
         <section className="alejadito container-fluid">
           <h2 className="fs-1 BorderTextRed">
             En Papa's burgers traemos lo mejor en:
@@ -64,17 +64,17 @@ const Inicio = () => {
             Ubicación
           </a>
         </section>
-      </div>
-      <div className="py-4 bg-oscuro BorderTextRed">
-        <h1 className="subtitulo text-center">Comida estrella</h1>
+      </section>
 
+
+      <section className="py-4 bg-oscuro BorderTextRed">
+        <h1 className="subtitulo text-center border-bottom">Plato estrella</h1>
             {datos
               .filter((productos) => productos.id === 1)
               .map((Productos) => (
                 <CardInfo key={Productos.id} items={Productos} />
             ))}
-
-      </div>
+      </section>
     </div>
   );
 };
