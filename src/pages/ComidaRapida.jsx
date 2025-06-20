@@ -48,7 +48,7 @@ const ComidaRapida = () => {
     <div className='subtitulo text-center alejadito'>Comida Rapida</div>
       <div className='row mx-0'>
           {datos.map((Productos) => (
-            <CardFood key={Productos.id} items={Productos}/>
+            <CardFood key={2} items={Productos}/>
           ))}
       </div>
     </div>

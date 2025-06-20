@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import CardInfo from "../components/CardInfo";
-const API = "/datos.json";
-
+import React, { useEffect, useState } from 'react'
+import CardInfo from '../components/CardInfo';
+const API="/datos.json";
 const Inicio = () => {
   const [datos, setDatos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -42,41 +41,30 @@ const Inicio = () => {
       </div>
     );
   }
-
+  
   return (
-    <div>
-      <section className="herofotoi text-white">
-        <section className="alejadito container-fluid">
-          <h2 className="fs-1 BorderTextRed">
-            En Papa's burgers traemos lo mejor en:
-          </h2>
-          <h1 className="titulo BorderTextRed">Comida Rapida</h1>
-          <p className="desaparecer BorderTextRed fs-1">
-            Papa's Burguers Tu parada de sabor. Comida rápida, desayunos y
-            almuerzos con calidad y rapidez.
-          </p>
-          <p className="BorderTextRed fs-1">📍 ¡Visítanos y disfruta </p>
-          <a
-            href="https://maps.app.goo.gl/g1PrZh8meJ2FWjV78"
-            className="btn btn-danger btn-lg py-2 px-5 mt-1 fs-4"
-          >
-            {" "}
-            Ubicación
-          </a>
-        </section>
-      </section>
+<>
 
-
-      <section className="py-4 bg-oscuro BorderTextRed">
-        <h1 className="subtitulo text-center border-bottom">Plato estrella</h1>
-            {datos
-              .filter((productos) => productos.id === 1)
-              .map((Productos) => (
-                <CardInfo key={Productos.id} items={Productos} />
-            ))}
-      </section>
+  <section className='alejadito herofotoi'> 
+    <div className='container-fluid BorderTextRed p-3'>
+      <h1 className='pt-5'>En papa's Burgers traemos lo mejor en:</h1>
+      <h1 className='titulo mt-3'> Comida Rapida</h1>
+      <div className='desaparecer alejadito'>
+        <p className='fs-1'>Ven y disfruta de una experiencia culinaria irresistible donde cada bocado cuenta..</p>
+      </div>
+      <a href='https://maps.app.goo.gl/6FgTq4xEsA9zLoV39' className='btn btn-lg px-5 btn-danger fs-1 mt-4' >Ubicanos</a>
     </div>
-  );
-};
+  </section>
+  <section className='bg-oscuro vh-60 BorderTextRed p-5 border-bottom'>
+    <h1 className='subtitulo text-center subtituloinfo'>Comida favorita</h1>
+                {datos.filter((productos) => productos.id === 1)
+              .map((Productos) => (
+              <CardInfo key={Productos.id} items={Productos}/>
+            ))}
+  </section>
 
-export default Inicio;
+</>
+  )
+}
+
+export default Inicio

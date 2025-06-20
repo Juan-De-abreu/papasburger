@@ -2,7 +2,7 @@
 const CardFood = ({items}) => {
   const direccion=`/src/assets/img/${items.id}.jpg`;
   return (
-    <div className="col-xl-3 col-md-4 col-sm-6 mb-3 p-3 ">
+    <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-3 p-3 ">
       <div className="card h-100 bordercard">
         <div className="card-header bg-danger p-1 bordercard ">
             <img

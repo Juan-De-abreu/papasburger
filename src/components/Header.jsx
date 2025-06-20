@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-<nav className="navbar navbar-expand-lg fs-2 BorderTextRed fixed-top vw-100">
+<nav className="navbar navbar-expand-lg fs-2 BorderTextRed fixed-top">
   <div className="container-fluid justify-between">
     <Link to={"/Inicio"} className="navbar-brand fs-1 papasburger" href="/src/pages/Inicio.jsx">Papas Burgeres</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

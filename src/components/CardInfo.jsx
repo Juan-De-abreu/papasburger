@@ -47,27 +47,37 @@ const CardInfo = ({items}) => {
   return (
         
         <div>
-            <div className="row m-0">
-                <h1 className='subtitulo py-3 pb-5'>{items.nombre}</h1>
-                <div className="col-xl-8">
-                    <ul className="fs-3 row">
-                    {datos
-                    .filter((productos) => productos.id === 1)
-                    .map((Productos) => (
-                        Productos.ingredientes.map((ingrediente)=>(
-                            <li className="col-md-4">{ingrediente}</li>
-                            
-                        ))
-                    ))}
-                    </ul>
-                </div>
-                <div className="col-xl-4">
-                                    <img
-            src={direccion}
-            alt={items.nombre}
-            className="img-fluid tamaborimg "/>
-                </div>
-            </div>
+
+<div className="container ">
+  <h1 className="subtitulo py-3 border-bottom subtituloinfo">{items.nombre}</h1>
+
+  <div className="row">
+    {/* Columna izquierda con ingredientes */}
+    <div className="col-xl-8 d-flex flex-column justify-content-between ">
+      <ul className="row p-0 m-0">
+  {datos
+    .filter((producto) => producto.id === 1)
+    .flatMap((producto) =>
+      producto.ingredientes.map((ingrediente, index) => (
+        <li className="col-6 mb-3 ingrediente-item" key={index}>
+          {ingrediente}
+        </li>
+      ))
+    )}
+</ul>
+
+    </div>
+
+    {/* Columna derecha con imagen */}
+    <div className="col-xl-4 d-flex">
+      <img
+        src={direccion}
+        alt={items.nombre}
+        className="img-fluid imageninfo align-self-stretch"
+      />
+    </div>
+  </div>
+</div>
 
     </div>
 
